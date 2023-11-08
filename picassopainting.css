@@ -1,6 +1,5 @@
 .shapes {
-
-flex-direction: column;  
+  flex-direction: column;
 }
 div {
   display: flex;
@@ -8,8 +7,6 @@ div {
 .circles {
   display: flex;
   position: absolute;
-}
-#yellows {
 }
 .yellowcircle1 {
   margin-top: 50px;
@@ -34,7 +31,6 @@ div {
 }
 .pinkcircle1 {
   z-index: 3;
-
   height: 160px;
   width: 160px;
   background-color: pink;
@@ -204,7 +200,8 @@ div {
   transform: rotate(15deg);
 }
 
-/*.ear::after {
+/* ear went wonky when trying to scale down to fit page
+.ear::after {
     content: "";
     display: flex;
     position: absolute;
@@ -230,7 +227,8 @@ div {
   left: 35%;
 }
 
-/*.mouth::before {
+/* same as ear on code line 206
+.mouth::before {
     content: "";
     display: flex;
     position: absolute;
@@ -383,4 +381,25 @@ div {
 form {
   text-align: center;
   color: brown;
+}
+
+/*for mobile 480x320*/
+@media (max-width: 480px) and (max-height: 320px){
+    body{
+        width: auto;
+    }
+}
+
+/*for iPad 1024x768*/
+@media (max-width: 1024px) and (max-height: 768px){
+    body{
+        width: auto;
+    }
+}
+
+/*for desktop 1680x1050*/
+@media(max-width: 1680px) and (max-height: 1050px){
+    body{
+        width: auto;
+    }
 }
